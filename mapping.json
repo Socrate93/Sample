@@ -1,0 +1,1001 @@
+{
+"settings" : {
+	"index" : {
+		"analysis" : {
+		  "filter": {
+			"ar_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_arabic_"]
+			},
+			"bg_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_bulgarian_"]
+			},
+			"ca_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_catalan_"]
+			},
+			"cs_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_czech_"]
+			},
+			"da_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_danish_"]
+			},
+			"de_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_german_"]
+			},
+			"de_stem_filter": {
+			  "type": "stemmer",
+			  "name": "minimal_german"
+			},
+			"el_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_greek_"]
+			},
+			"en_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_english_"]
+			},
+			"en_stem_filter": {
+			  "type": "stemmer",
+			  "name": "minimal_english"
+			},
+			"es_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_spanish_"]
+			},
+			"es_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_spanish"
+			},
+			"eu_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_basque_"]
+			},
+			"fa_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_persian_"]
+			},
+			"fi_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_finnish_"]
+			},
+			"fi_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_finish"
+			},
+			"fr_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_french_"]
+			},
+			"fr_stem_filter": {
+			  "type": "stemmer",
+			  "name": "minimal_french"
+			},
+			"he_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["אבל","או","אולי","אותה","אותה","אותו","אותו","אותו","אותי","אותך","אותם","אותן","אותנו","אז","אחר","אחר","אחרות","אחרי","אחרי","אחרי","אחרים","אחרת","אי","איזה","איך","אין","אין","איפה","איתה","איתו","איתי","איתך","איתכם","איתכן","איתם","איתן","איתנו","אך","אך","אל","אל","אלה","אלה","אלו","אלו","אם","אם","אנחנו","אני","אס","אף","אצל","אשר","אשר","את","את","אתה","אתכם","אתכן","אתם","אתן","באמצע","באמצעות","בגלל","בין","בלי","בלי","במידה","ברם","בשביל","בתוך","גם","דרך","הוא","היא","היה","היכן","היתה","היתי","הם","הן","הנה","הרי","ואילו","ואת","זאת","זה","זה","זות","יהיה","יוכל","יוכלו","יותר","יכול","יכולה","יכולות","יכולים","יכל","יכלה","יכלו","יש","כאן","כאשר","כולם","כולן","כזה","כי","כיצד","כך","ככה","כל","כלל","כמו","כמו","כן","כן","כפי","כש","לא","לאו","לאן","לבין","לה","להיות","להם","להן","לו","לי","לכם","לכן","לכן","למה","למטה","למעלה","למרות","למרות","לנו","לעבר","לעיכן","לפיכך","לפני","לפני","מאד","מאחורי","מאין","מאיפה","מבלי","מבעד","מדוע","מדי","מה","מהיכן","מול","מחוץ","מי","מכאן","מכיוון","מלבד","מן","מנין","מסוגל","מעט","מעטים","מעל","מעל","מצד","מתחת","מתחת","מתי","נגד","נגר","נו","עד","עד","עז","על","על","עלי","עליה","עליהם","עליהן","עליו","עליך","עליכם","עלינו","עם","עם","עצמה","עצמהם","עצמהן","עצמו","עצמי","עצמם","עצמן","עצמנו","פה","רק","רק","שוב","שוב","של","שלה","שלהם","שלהן","שלו","שלי","שלך","שלכם","שלכן","שלנו","שם","תהיה","תחת"]
+			},
+			"hi_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_hindi_"]
+			},
+			"hu_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_hungarian_"]
+			},
+			"hu_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_hungarian"
+			},
+			"hy_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_armenian_"]
+			},
+			"id_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_indonesian_"]
+			},
+			"it_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_italian_"]
+			},
+			"it_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_italian"
+			},
+			"ja_pos_filter": {
+			  "type": "kuromoji_part_of_speech",
+			  "stoptags": ["\\u52a9\\u8a5e-\\u683c\\u52a9\\u8a5e-\\u4e00\\u822c", "\\u52a9\\u8a5e-\\u7d42\\u52a9\\u8a5e"]
+			},
+			"nl_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_dutch_"]
+			},
+			"no_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_norwegian_"]
+			},
+			"pt_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_portuguese_"]
+			},
+			"pt_stem_filter": {
+			  "type": "stemmer",
+			  "name": "minimal_portuguese"
+			},
+			"ro_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_romanian_"]
+			},
+			"ru_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_russian_"]
+			},
+			"ru_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_russian"
+			},
+			"sv_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_swedish_"]
+			},
+			"sv_stem_filter": {
+			  "type": "stemmer",
+			  "name": "light_swedish"
+			},
+			"tr_stop_filter": {
+			  "type": "stop",
+			  "stopwords": ["_turkish_"]
+			},
+			"mynGram" : {
+			   "type" : "nGram",
+			   "min_gram" : 2,
+			   "max_gram" : 50
+			}
+		  },
+		  "analyzer": {
+			"ar_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "ar_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"bg_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "bg_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"ca_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "ca_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"cs_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "cs_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"da_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "da_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"de_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "de_stop_filter", "de_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"el_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "el_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"en_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "en_stop_filter", "en_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"es_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "es_stop_filter", "es_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"eu_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "eu_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"fa_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "fa_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"fi_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "fi_stop_filter", "fi_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"fr_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "elision", "fr_stop_filter", "fr_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"he_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "he_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"hi_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "hi_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"hu_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "hu_stop_filter", "hu_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"hy_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "hy_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"id_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "id_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"it_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "it_stop_filter", "it_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"ja_analyzer": {
+			  "type": "custom",
+			  "filter": ["kuromoji_baseform", "ja_pos_filter", "icu_normalizer", "icu_folding", "cjk_width", "mynGram"],
+			  "tokenizer": "kuromoji_tokenizer"
+			},
+			"ko_analyzer": {
+			  "type": "cjk",
+			  "filter": []
+			},
+			"nl_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "nl_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"no_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "no_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"pt_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "pt_stop_filter", "pt_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"ro_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "ro_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"ru_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "ru_stop_filter", "ru_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"sv_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "sv_stop_filter", "sv_stem_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"tr_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "tr_stop_filter", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			},
+			"zh_analyzer": {
+			  "type": "custom",
+			  "filter": ["smartcn_word", "icu_normalizer", "icu_folding", "mynGram"],
+			  "tokenizer": "smartcn_sentence"
+			},
+			"lowercase_analyzer": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "icu_folding", "mynGram"],
+			  "tokenizer": "keyword"
+			},
+			"default": {
+			  "type": "custom",
+			  "filter": ["icu_normalizer", "icu_folding", "mynGram"],
+			  "tokenizer": "icu_tokenizer"
+			}
+		  },
+		  "tokenizer": {
+			"kuromoji": {
+			  "type": "kuromoji_tokenizer",
+			  "mode": "search"
+			}
+		  }
+		}
+	}
+},
+"mappings" : {
+	"locations" : {
+		"properties": {
+			"id" : {
+				"type": "string",
+				"index" : "not_analyzed"
+			},
+			"alterNames": { 
+			  "type": "string"
+			},
+			"loc": {
+				"type": "geo_point"
+			},
+			"ar": { 
+				"type": "string",
+				"analyzer": "ar_analyzer"
+			},
+			"bg": { 
+				"type": "string",
+				"analyzer": "bg_analyzer"
+			},
+			"ca": { 
+				"type": "string",
+				"analyzer": "ca_analyzer"
+			},
+			"cs": { 
+				"type": "string",
+				"analyzer": "cs_analyzer"
+			},
+			"da": { 
+				"type": "string",
+				"analyzer": "da_analyzer"
+			},
+			"de": { 
+				"type":     "string",
+				"analyzer": "de_analyzer"
+			},
+			"el": { 
+				"type":     "string",
+				"analyzer": "el_analyzer"
+			},
+			"en": { 
+				"type":     "string",
+				"analyzer": "en_analyzer"
+			},
+			"es": { 
+				"type":     "string",
+				"analyzer": "es_analyzer"
+			},
+			"eu": { 
+				"type":     "string",
+				"analyzer": "eu_analyzer"
+			},
+			"fa": { 
+				"type":     "string",
+				"analyzer": "fa_analyzer"
+			},
+			"fi": { 
+				"type":     "string",
+				"analyzer": "fi_analyzer"
+			},
+			"fr": { 
+				"type":     "string",
+				"analyzer": "fr_analyzer"
+			},
+			"he": { 
+				"type":     "string",
+				"analyzer": "he_analyzer"
+			},
+			"hi": { 
+				"type":     "string",
+				"analyzer": "hi_analyzer"
+			},
+			"hu": { 
+				"type":     "string",
+				"analyzer": "hu_analyzer"
+			},
+			"hy": { 
+				"type":     "string",
+				"analyzer": "hy_analyzer"
+			},
+			"it": { 
+				"type":     "string",
+				"analyzer": "it_analyzer"
+			},
+			"ja": { 
+				"type":     "string",
+				"analyzer": "ja_analyzer"
+			},
+			"ko": { 
+				"type":     "string",
+				"analyzer": "ko_analyzer"
+			},
+			"nl": { 
+				"type":     "string",
+				"analyzer": "nl_analyzer"
+			},
+			"no": { 
+				"type":     "string",
+				"analyzer": "no_analyzer"
+			},
+			"pt": { 
+				"type":     "string",
+				"analyzer": "pt_analyzer"
+			},
+			"ro": { 
+				"type":     "string",
+				"analyzer": "ro_analyzer"
+			},
+			"ru": { 
+				"type":     "string",
+				"analyzer": "ru_analyzer"
+			},
+			"sv": { 
+				"type":     "string",
+				"analyzer": "sv_analyzer"
+			},
+			"tr": { 
+				"type":     "string",
+				"analyzer": "tr_analyzer"
+			},
+			"zh": { 
+				"type":     "string",
+				"analyzer": "zh_analyzer"
+			}
+		}
+	},
+	"tags" : {
+		"properties" : {
+			"tag" : {
+				"type": "string", 
+				"index" : "not_analyzed"
+			},
+			"keywords" : { 
+				"type" : "completion",
+				"analyzer" : "simple",
+				"search_analyzer" : "simple",
+				"payloads" : true
+			}
+		}
+	},
+	"activities" : {
+		"properties": {
+			"id" : {
+				"type": "string", 
+				"index" : "not_analyzed"
+			},
+			"status": {
+				"type": "boolean"
+			},
+			"note": {
+				"type": "float"
+			},
+			"minParticipants": {
+				"type": "integer"
+			},
+			"maxParticipants": {
+				"type": "integer"
+			},
+			"places": {
+				"properties": {
+					"loc" : {
+						"type": "geo_point"
+					},
+					"id" : { 
+						"type": "string", 
+						"index" : "not_analyzed" 
+					}
+				}
+			},
+			"languages": {
+				"properties": {
+					"code" : {
+						"type": "string"
+					}
+				}
+			},
+			"priceDetails": {
+				"type" : "object"
+			},
+			"categories": {
+				"properties": {
+					"id" : { 
+						"type": "string", 
+						"index" : "not_analyzed" 
+					},
+					"name_ar": { 
+						"type": "string",
+						"analyzer": "ar_analyzer"
+					},
+					"name_bg": { 
+						"type": "string",
+						"analyzer": "bg_analyzer"
+					},
+					"name_ca": { 
+						"type": "string",
+						"analyzer": "ca_analyzer"
+					},
+					"name_cs": { 
+						"type": "string",
+						"analyzer": "cs_analyzer"
+					},
+					"name_da": { 
+						"type": "string",
+						"analyzer": "da_analyzer"
+					},
+					"name_de": { 
+						"type":     "string",
+						"analyzer": "de_analyzer"
+					},
+					"name_el": { 
+						"type":     "string",
+						"analyzer": "el_analyzer"
+					},
+					"name_en": { 
+						"type":     "string",
+						"analyzer": "en_analyzer"
+					},
+					"name_es": { 
+						"type":     "string",
+						"analyzer": "es_analyzer"
+					},
+					"name_eu": { 
+						"type":     "string",
+						"analyzer": "eu_analyzer"
+					},
+					"name_fa": { 
+						"type":     "string",
+						"analyzer": "fa_analyzer"
+					},
+					"name_fi": { 
+						"type":     "string",
+						"analyzer": "fi_analyzer"
+					},
+					"name_fr": { 
+						"type":     "string",
+						"analyzer": "fr_analyzer"
+					},
+					"name_he": { 
+						"type":     "string",
+						"analyzer": "he_analyzer"
+					},
+					"name_hi": { 
+						"type":     "string",
+						"analyzer": "hi_analyzer"
+					},
+					"name_hu": { 
+						"type":     "string",
+						"analyzer": "hu_analyzer"
+					},
+					"name_hy": { 
+						"type":     "string",
+						"analyzer": "hy_analyzer"
+					},
+					"name_id": { 
+						"type":     "string",
+						"analyzer": "id_analyzer"
+					},
+					"name_it": { 
+						"type":     "string",
+						"analyzer": "it_analyzer"
+					},
+					"name_ja": { 
+						"type":     "string",
+						"analyzer": "ja_analyzer"
+					},
+					"name_ko": { 
+						"type":     "string",
+						"analyzer": "ko_analyzer"
+					},
+					"name_nl": { 
+						"type":     "string",
+						"analyzer": "nl_analyzer"
+					},
+					"name_no": { 
+						"type":     "string",
+						"analyzer": "no_analyzer"
+					},
+					"name_pt": { 
+						"type":     "string",
+						"analyzer": "pt_analyzer"
+					},
+					"name_ro": { 
+						"type":     "string",
+						"analyzer": "ro_analyzer"
+					},
+					"name_ru": { 
+						"type":     "string",
+						"analyzer": "ru_analyzer"
+					},
+					"name_sv": { 
+						"type":     "string",
+						"analyzer": "sv_analyzer"
+					},
+					"name_tr": { 
+						"type":     "string",
+						"analyzer": "tr_analyzer"
+					},
+					"name_zh": { 
+						"type":     "string",
+						"analyzer": "zh_analyzer"
+					}
+				}
+			},
+			"includedServices": {
+				"properties": {
+					"inCharge" : { "type": "string", "index" : "not_analyzed" },
+					"service" : {
+						"properties": {
+							"id" : { "type": "string", "index" : "not_analyzed" },
+							"name_ar": { 
+								"type": "string",
+								"analyzer": "ar_analyzer"
+							},
+							"name_bg": { 
+								"type": "string",
+								"analyzer": "bg_analyzer"
+							},
+							"name_ca": { 
+								"type": "string",
+								"analyzer": "ca_analyzer"
+							},
+							"name_cs": { 
+								"type": "string",
+								"analyzer": "cs_analyzer"
+							},
+							"name_da": { 
+								"type": "string",
+								"analyzer": "da_analyzer"
+							},
+							"name_de": { 
+								"type":     "string",
+								"analyzer": "de_analyzer"
+							},
+							"name_el": { 
+								"type":     "string",
+								"analyzer": "el_analyzer"
+							},
+							"name_en": { 
+								"type":     "string",
+								"analyzer": "en_analyzer"
+							},
+							"name_es": { 
+								"type":     "string",
+								"analyzer": "es_analyzer"
+							},
+							"name_eu": { 
+								"type":     "string",
+								"analyzer": "eu_analyzer"
+							},
+							"name_fa": { 
+								"type":     "string",
+								"analyzer": "fa_analyzer"
+							},
+							"name_fi": { 
+								"type":     "string",
+								"analyzer": "fi_analyzer"
+							},
+							"name_fr": { 
+								"type":     "string",
+								"analyzer": "fr_analyzer"
+							},
+							"name_he": { 
+								"type":     "string",
+								"analyzer": "he_analyzer"
+							},
+							"name_hi": { 
+								"type":     "string",
+								"analyzer": "hi_analyzer"
+							},
+							"name_hu": { 
+								"type":     "string",
+								"analyzer": "hu_analyzer"
+							},
+							"name_hy": { 
+								"type":     "string",
+								"analyzer": "hy_analyzer"
+							},
+							"name_id": { 
+								"type":     "string",
+								"analyzer": "id_analyzer"
+							},
+							"name_it": { 
+								"type":     "string",
+								"analyzer": "it_analyzer"
+							},
+							"name_ja": { 
+								"type":     "string",
+								"analyzer": "ja_analyzer"
+							},
+							"name_ko": { 
+								"type":     "string",
+								"analyzer": "ko_analyzer"
+							},
+							"name_nl": { 
+								"type":     "string",
+								"analyzer": "nl_analyzer"
+							},
+							"name_no": { 
+								"type":     "string",
+								"analyzer": "no_analyzer"
+							},
+							"name_pt": { 
+								"type":     "string",
+								"analyzer": "pt_analyzer"
+							},
+							"name_ro": { 
+								"type":     "string",
+								"analyzer": "ro_analyzer"
+							},
+							"name_ru": { 
+								"type":     "string",
+								"analyzer": "ru_analyzer"
+							},
+							"name_sv": { 
+								"type":     "string",
+								"analyzer": "sv_analyzer"
+							},
+							"name_tr": { 
+								"type":     "string",
+								"analyzer": "tr_analyzer"
+							},
+							"name_zh": { 
+								"type":     "string",
+								"analyzer": "zh_analyzer"
+							}
+						}
+					}
+				}
+			},
+			"cancelPlan" : {
+				"type": "string", 
+				"index" : "not_analyzed"
+			},
+			"tags" : {
+				"type": "string"
+			},
+			"info": {
+				"properties": {
+					"name_ar": { 
+						"type": "string",
+						"analyzer": "ar_analyzer"
+					},
+					"name_bg": { 
+						"type": "string",
+						"analyzer": "bg_analyzer"
+					},
+					"name_ca": { 
+						"type": "string",
+						"analyzer": "ca_analyzer"
+					},
+					"name_cs": { 
+						"type": "string",
+						"analyzer": "cs_analyzer"
+					},
+					"name_da": { 
+						"type": "string",
+						"analyzer": "da_analyzer"
+					},
+					"name_de": { 
+						"type":     "string",
+						"analyzer": "de_analyzer"
+					},
+					"name_el": { 
+						"type":     "string",
+						"analyzer": "el_analyzer"
+					},
+					"name_en": { 
+						"type":     "string",
+						"analyzer": "en_analyzer"
+					},
+					"name_es": { 
+						"type":     "string",
+						"analyzer": "es_analyzer"
+					},
+					"name_eu": { 
+						"type":     "string",
+						"analyzer": "eu_analyzer"
+					},
+					"name_fa": { 
+						"type":     "string",
+						"analyzer": "fa_analyzer"
+					},
+					"name_fi": { 
+						"type":     "string",
+						"analyzer": "fi_analyzer"
+					},
+					"name_fr": { 
+						"type":     "string",
+						"analyzer": "fr_analyzer"
+					},
+					"name_he": { 
+						"type":     "string",
+						"analyzer": "he_analyzer"
+					},
+					"name_hi": { 
+						"type":     "string",
+						"analyzer": "hi_analyzer"
+					},
+					"name_hu": { 
+						"type":     "string",
+						"analyzer": "hu_analyzer"
+					},
+					"name_hy": { 
+						"type":     "string",
+						"analyzer": "hy_analyzer"
+					},
+					"name_id": { 
+						"type":     "string",
+						"analyzer": "id_analyzer"
+					},
+					"name_it": { 
+						"type":     "string",
+						"analyzer": "it_analyzer"
+					},
+					"name_ja": { 
+						"type":     "string",
+						"analyzer": "ja_analyzer"
+					},
+					"name_ko": { 
+						"type":     "string",
+						"analyzer": "ko_analyzer"
+					},
+					"name_nl": { 
+						"type":     "string",
+						"analyzer": "nl_analyzer"
+					},
+					"name_no": { 
+						"type":     "string",
+						"analyzer": "no_analyzer"
+					},
+					"name_pt": { 
+						"type":     "string",
+						"analyzer": "pt_analyzer"
+					},
+					"name_ro": { 
+						"type":     "string",
+						"analyzer": "ro_analyzer"
+					},
+					"name_ru": { 
+						"type":     "string",
+						"analyzer": "ru_analyzer"
+					},
+					"name_sv": { 
+						"type":     "string",
+						"analyzer": "sv_analyzer"
+					},
+					"name_tr": { 
+						"type":     "string",
+						"analyzer": "tr_analyzer"
+					},
+					"name_zh": { 
+						"type":     "string",
+						"analyzer": "zh_analyzer"
+					},
+					"desc_ar": { 
+						"type": "string",
+						"analyzer": "ar_analyzer"
+					},
+					"desc_bg": { 
+						"type": "string",
+						"analyzer": "bg_analyzer"
+					},
+					"desc_ca": { 
+						"type": "string",
+						"analyzer": "ca_analyzer"
+					},
+					"desc_cs": { 
+						"type": "string",
+						"analyzer": "cs_analyzer"
+					},
+					"desc_da": { 
+						"type": "string",
+						"analyzer": "da_analyzer"
+					},
+					"desc_de": { 
+						"type":     "string",
+						"analyzer": "de_analyzer"
+					},
+					"desc_el": { 
+						"type":     "string",
+						"analyzer": "el_analyzer"
+					},
+					"desc_en": { 
+						"type":     "string",
+						"analyzer": "en_analyzer"
+					},
+					"desc_es": { 
+						"type":     "string",
+						"analyzer": "es_analyzer"
+					},
+					"desc_eu": { 
+						"type":     "string",
+						"analyzer": "eu_analyzer"
+					},
+					"desc_fa": { 
+						"type":     "string",
+						"analyzer": "fa_analyzer"
+					},
+					"desc_fi": { 
+						"type":     "string",
+						"analyzer": "fi_analyzer"
+					},
+					"desc_fr": { 
+						"type":     "string",
+						"analyzer": "fr_analyzer"
+					},
+					"desc_he": { 
+						"type":     "string",
+						"analyzer": "he_analyzer"
+					},
+					"desc_hi": { 
+						"type":     "string",
+						"analyzer": "hi_analyzer"
+					},
+					"desc_hu": { 
+						"type":     "string",
+						"analyzer": "hu_analyzer"
+					},
+					"desc_hy": { 
+						"type":     "string",
+						"analyzer": "hy_analyzer"
+					},
+					"desc_id": { 
+						"type":     "string",
+						"analyzer": "id_analyzer"
+					},
+					"desc_it": { 
+						"type":     "string",
+						"analyzer": "it_analyzer"
+					},
+					"desc_ja": { 
+						"type":     "string",
+						"analyzer": "ja_analyzer"
+					},
+					"desc_ko": { 
+						"type":     "string",
+						"analyzer": "ko_analyzer"
+					},
+					"desc_nl": { 
+						"type":     "string",
+						"analyzer": "nl_analyzer"
+					},
+					"desc_no": { 
+						"type":     "string",
+						"analyzer": "no_analyzer"
+					},
+					"desc_pt": { 
+						"type":     "string",
+						"analyzer": "pt_analyzer"
+					},
+					"desc_ro": { 
+						"type":     "string",
+						"analyzer": "ro_analyzer"
+					},
+					"desc_ru": { 
+						"type":     "string",
+						"analyzer": "ru_analyzer"
+					},
+					"desc_sv": { 
+						"type":     "string",
+						"analyzer": "sv_analyzer"
+					},
+					"desc_tr": { 
+						"type":     "string",
+						"analyzer": "tr_analyzer"
+					},
+					"desc_zh": { 
+						"type":     "string",
+						"analyzer": "zh_analyzer"
+					}
+				}
+			}
+		}
+	}
+}
+}
